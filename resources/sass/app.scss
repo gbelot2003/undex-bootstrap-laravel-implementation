@@ -3,7 +3,13 @@
 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
-@import '~material-icons/iconfont/material-icons';
+@import "./css/material-design-iconic-font.min.css";
+
+@import './css/themify-icons/themify-icons.css';
+
+@import "./css/pe-icon-7-stroke.min.css";
+
+@import "etline/style";
 
 // Styles
 @import "~owl.carousel";
@@ -17,6 +23,4 @@
 @import "scss/style";
 
 
-// Web Icons
-//@import url(../css/material-design-iconic-font.min.css);
-//@import url(../etline/style.css);
+

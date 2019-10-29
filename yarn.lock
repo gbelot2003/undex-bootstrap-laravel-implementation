@@ -6282,6 +6282,11 @@ terser@^4.1.2:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
+themify-icons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/themify-icons/-/themify-icons-1.0.0.tgz#216f330ed1b9c3fdc8e675655e189a0b7ecb1c5c"
+  integrity sha1-IW8zDtG5w/3I5nVlXhiaC37LHFw=
+
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"

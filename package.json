@@ -27,6 +27,7 @@
     "dependencies": {
         "jqueryui": "^1.11.1",
         "material-icons": "^0.3.1",
-        "owl.carousel": "^2.3.4"
+        "owl.carousel": "^2.3.4",
+        "themify-icons": "^1.0.0"
     }
 }
