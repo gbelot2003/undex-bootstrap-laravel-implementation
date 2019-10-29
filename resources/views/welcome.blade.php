@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="user-content">
                                     <h6>Ajoy Das</h6>
-                                    <span>Pro User <i class="ti-wand"></i></span>
+                                    <span>Pro User <i class="fa fa-angle-right"></i></span>
                                 </div>
                             </li>
                             <li class="active"><a href="index.html"><i class="icon_lifesaver"></i> <span>Dashboard</span></a></li>

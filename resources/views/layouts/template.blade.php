@@ -12,7 +12,7 @@
     <title>Undex - Modern Admin Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.png">
+    <link rel="icon" href="/images/core-img/favicon.png">
 
     <!-- These plugins only need for the run this page -->
     {{--<link rel="stylesheet" href="css/default-assets/datatables.bootstrap4.css">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/default-assets/select.bootstrap4.css">--}}
 
     <!-- Master Stylesheet [If you remove this CSS file, your file will be broken undoubtedly.] -->
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body>

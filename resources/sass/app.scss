@@ -1,7 +1,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './css/font-awesome.min.css';
 
 @import "./css/material-design-iconic-font.min.css";
 
@@ -9,7 +9,20 @@
 
 @import "./css/pe-icon-7-stroke.min.css";
 
-@import "etline/style";
+@import "./etline/style";
+
+@import "./css/style.css";
+
+// Datatable
+
+@import "./css/default-assets/datatables.bootstrap4.css";
+
+@import "./css/default-assets/responsive.bootstrap4.css";
+
+@import "./css/default-assets/buttons.bootstrap4.css";
+
+@import "./css/default-assets/select.bootstrap4.css";
+
 
 // Styles
 @import "~owl.carousel";
@@ -18,9 +31,11 @@
 
 @import "~jqueryui/jquery-ui";
 
-@import "css/animate";
+@import "./css/animate";
 
-@import "scss/style";
+@import "./scss/style";
+
+
 
 
 
