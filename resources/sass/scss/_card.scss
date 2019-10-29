@@ -1,0 +1,172 @@
+/* :: Card CSS */
+
+.single-card-area {
+    border-radius: 10px;
+
+    .card-thumb {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-text {
+        padding: 1rem;
+
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.single-card-two-area {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    border-radius: 10px;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    .single-card-content {
+        .single-card-two-text {
+            h4 {
+                color: $white-color;
+            }
+
+            p {
+                font-size: 14px;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.single-card-three-area {
+    padding: 30px;
+    text-align: center;
+    background-color: $white-color;
+
+    .icon {
+        height: 70px;
+        width: 70px;
+        line-height: 72px;
+        font-size: 26px;
+        margin: auto;
+        @include transition-duration(500ms);
+        border-radius: 50%;
+        background-color: $background-color;
+    }
+
+    h4 {
+        margin-top: 15px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        .icon {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+.card- {
+    background: $white-color;
+    border: 1px solid;
+}
+
+.border-info- {
+    border: #17a2b8 !important;
+}
+
+.border-danger- {
+    border: 1px solid #f1536e !important;
+}
+
+.border-primary- {
+    border: 1px solid #2466fd !important;
+}
+
+.gradient-light-blue-cyan {
+    background: #0288d1;
+    background: -webkit-linear-gradient(45deg, #0288d1, #26c6da) !important;
+    background: -moz- oldlinear-gradient(45deg, #0288d1, #26c6da) !important;
+    background: -o-linear-gradient(45deg, #0288d1, #26c6da) !important;
+    background: linear-gradient(45deg, #0288d1, #26c6da) !important;
+}
+
+.gradient-45deg-red-pink {
+    background: #ff5252;
+    background: -webkit-linear-gradient(45deg, #ff5252, #f48fb1) !important;
+    background: -moz- oldlinear-gradient(45deg, #ff5252, #f48fb1) !important;
+    background: -o-linear-gradient(45deg, #ff5252, #f48fb1) !important;
+    background: linear-gradient(45deg, #ff5252, #f48fb1) !important;
+}
+
+.gradient-45deg-amber-amber {
+    background: #ff6f00;
+    background: -webkit-linear-gradient(45deg, #ff6f00, #ffca28) !important;
+    background: -moz- oldlinear-gradient(45deg, #ff6f00, #ffca28) !important;
+    background: -o-linear-gradient(45deg, #ff6f00, #ffca28) !important;
+    background: linear-gradient(45deg, #ff6f00, #ffca28) !important;
+}
+
+.gradient-45deg-green-teal {
+    background: #43a047;
+    background: -webkit-linear-gradient(45deg, #43a047, #1de9b6) !important;
+    background: -moz- oldlinear-gradient(45deg, #43a047, #1de9b6) !important;
+    background: -o-linear-gradient(45deg, #43a047, #1de9b6) !important;
+    background: linear-gradient(45deg, #43a047, #1de9b6) !important;
+}
+
+.gradient-45deg-deep-orange-orange {
+    background: #bf360c;
+    background: -webkit-linear-gradient(45deg, #bf360c, #f57c00) !important;
+    background: -moz- oldlinear-gradient(45deg, #bf360c, #f57c00) !important;
+    background: -o-linear-gradient(45deg, #bf360c, #f57c00) !important;
+    background: linear-gradient(45deg, #bf360c, #f57c00) !important;
+}
+
+.gradient-45deg-blue-indigo {
+    background: #2962ff;
+    background: -webkit-linear-gradient(45deg, #2962ff, #3949ab) !important;
+    background: -moz- oldlinear-gradient(45deg, #2962ff, #3949ab) !important;
+    background: -o-linear-gradient(45deg, #2962ff, #3949ab) !important;
+    background: linear-gradient(45deg, #2962ff, #3949ab) !important;
+}
+
+.gradient-45deg-purple-deep-orange {
+    background: #8e24aa;
+    background: -webkit-linear-gradient(45deg, #8e24aa, #ff6e40) !important;
+    background: -moz- oldlinear-gradient(45deg, #8e24aa, #ff6e40) !important;
+    background: -o-linear-gradient(45deg, #8e24aa, #ff6e40) !important;
+    background: linear-gradient(45deg, #8e24aa, #ff6e40) !important;
+}
+
+.gradient-45deg-purple-deep-purple {
+    background: #7b1fa2;
+    background: -webkit-linear-gradient(45deg, #7b1fa2, #7c4dff) !important;
+    background: -moz- oldlinear-gradient(45deg, #7b1fa2, #7c4dff) !important;
+    background: -o-linear-gradient(45deg, #7b1fa2, #7c4dff) !important;
+    background: linear-gradient(45deg, #7b1fa2, #7c4dff) !important;
+}
+.background-round {
+	height: 40px;
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .18);
+}

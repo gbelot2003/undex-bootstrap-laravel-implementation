@@ -1,0 +1,186 @@
+/* :: Calendar CSS */
+
+.fc-event.draging-button {
+    padding: 10px 10px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    color: $white-color;
+    font-weight: 600;
+    border-color: transparent;
+
+    @media #{$breakpoint-lg} {
+       font-size: 12px;
+    }
+
+    i {
+        color: $white-color;
+    }
+}
+
+.fc-button {
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+    margin-right: 4px;
+}
+
+.fc-button-primary {
+    color: $white-color;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        color: $primary;
+        border-color: $primary;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.fc-button-primary:disabled {
+    color: $white-color;
+    background-color: $primary;
+    border-color: $primary;
+
+    @media #{$breakpoint-lg} {
+        margin-top: 10px;
+    }
+}
+
+.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button-primary:not(:disabled):active {
+    color: $white-color;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event {
+    padding: 8px 12px;
+    border: none;
+    background-color: $primary !important;
+    border-radius: 0;
+    color: $white-color;
+}
+
+.fc-unthemed td.fc-today {
+    background: #e9ecef;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event.fc-event-warning {
+    background-color: #f39c12 !important;
+}
+
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+    text-decoration: none;
+}
+
+.fc-day-header.fc-widget-header {
+    padding: 5px 10px;
+    background-color: #e9ecef;
+}
+
+.fc-day-header.fc-widget-header span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.fc-day-number {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.fc-dayGrid-view .fc-day-number,
+.fc-dayGrid-view .fc-week-number {
+    padding: 10px;
+}
+
+.fc-toolbar h2 {
+    font-size: 18px;
+
+    @media #{$breakpoint-xs} {
+        margin-bottom: 15px;
+    }
+}
+
+.fc-toolbar {
+    @media #{$breakpoint-xs} {
+        display: block;
+    }
+}
+
+.fc-left {
+    @media #{$breakpoint-xs} {
+        margin-bottom: 15px;
+    }
+}
+
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-list-heading td,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead {
+    border-color: $border-color;
+}
+
+.datepicker.datepicker-dropdown .datepicker-days table.table-condensed tbody td.day.today,
+.datepicker.datepicker-inline .datepicker-days table.table-condensed tbody td.day.today {
+    color: #fff;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.datepicker.datepicker-dropdown .datepicker-days table.table-condensed tbody td.day.today::before,
+.datepicker.datepicker-inline .datepicker-days table.table-condensed tbody td.day.today::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background: $primary;
+    border-radius: 25px;
+    box-shadow: 3px 3px 6px 0 rgba(147, 127, 201, 0.43);
+    -webkit-box-shadow: 3px 3px 6px 0 rgba(147, 127, 201, 0.43);
+    -moz-box-shadow: 3px 3px 6px 0 rgba(147, 127, 201, 0.43);
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 6px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
+
+.datepicker.datepicker-dropdown .datepicker-days table.table-condensed tbody td.day,
+.datepicker.datepicker-inline .datepicker-days table.table-condensed tbody td.day {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    color: #001737;
+    font-weight: bold;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+
+.datepicker.datepicker-dropdown .datepicker-days table.table-condensed,
+.datepicker.datepicker-inline .datepicker-days table.table-condensed {
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+/* :: Notification CSS Area */
+
+.alert-primary .alert-heading {
+    -webkit-box-shadow: rgba(115, 103, 240, .4) 0 6px 15px -7px;
+    box-shadow: rgba(115, 103, 240, .4) 0 6px 15px -7px;
+}
+
+.alert-warning .alert-heading {
+    -webkit-box-shadow: rgba(255, 159, 67, .4) 0 6px 15px -7px;
+    box-shadow: rgba(255, 159, 67, .4) 0 6px 15px -7px;
+}
+
+.alert-success .alert-heading {
+    -webkit-box-shadow: rgba(40, 199, 111, .4) 0 6px 15px -7px;
+    box-shadow: rgba(40, 199, 111, .4) 0 6px 15px -7px;
+}
+
+.alert-danger .alert-heading {
+    -webkit-box-shadow: rgba(234, 84, 85, .4) 0 6px 15px -7px;
+    box-shadow: rgba(234, 84, 85, .4) 0 6px 15px -7px;
+}
+
+.alert.alert-dark .alert-heading {
+    -webkit-box-shadow: rgba(30, 30, 30, .4) 0 6px 15px -7px;
+    box-shadow: rgba(30, 30, 30, .4) 0 6px 15px -7px;
+}
+
+.alert-info .alert-heading {
+    -webkit-box-shadow: rgba(0, 207, 232, .4) 0 6px 15px -7px;
+    box-shadow: rgba(0, 207, 232, .4) 0 6px 15px -7px;
+}
+
+.alert.alert-light .alert-heading {
+    -webkit-box-shadow: rgba(186, 191, 199, .4) 0 6px 15px -7px;
+    box-shadow: rgba(186, 191, 199, .4) 0 6px 15px -7px;
+}

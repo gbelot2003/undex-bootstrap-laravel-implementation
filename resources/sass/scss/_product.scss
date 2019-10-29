@@ -1,0 +1,68 @@
+/* :: Product Edit CSS */
+
+.product-thumb {
+    width: 60px;
+}
+
+.progress-w-percent .progress {
+    width: calc(100% - 50px);
+    float: left;
+    margin-top: 8px;
+}
+
+.progress-w-percent .progress-value {
+    width: 40px;
+    float: right;
+    text-align: right;
+    line-height: 20px;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::before {
+    -webkit-box-shadow: 0 0 45px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, .12);
+    background-color: #0acf97;
+    top: auto;
+    bottom: auto;
+}
+
+.product-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 18px;
+    border-radius: 7px;
+    background-color: #fff;
+    @include box-shadow(0 4px 25px 0 rgba(0, 0, 0, .1));
+
+    .product-title {
+        a {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #6b6f82 !important;
+            text-align: center;
+            display: inline-block;
+            @include transition-duration(500ms);
+            line-height: 1;
+        }
+
+    }
+
+    .product-price {
+        color: $heading-color !important;
+        font-size: 24px;
+        font-weight: 800;
+    }
+}
+
+.checkout-thumb {
+    width: 60px;
+}
+
+.product-border {
+    border: 2px solid $primary;
+}
+
+.img-thumbnail {
+    border: 2px solid $primary;
+}

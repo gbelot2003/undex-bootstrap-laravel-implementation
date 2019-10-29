@@ -1,0 +1,85 @@
+/* :: Preloader CSS */
+
+#preloader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+#hasro-load {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: $primary;
+    -webkit-animation: hasroRotate 2400ms linear infinite;
+    animation: hasroRotate 2400ms linear infinite;
+    z-index: 999;
+}
+
+#hasro-load:before {
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    right: 7.5px;
+    bottom: 7.5px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #e84393;
+    -webkit-animation: hasroRotate 2700ms linear infinite;
+    animation: hasroRotate 2700ms linear infinite
+}
+
+#hasro-load:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: $primary;
+    -webkit-animation: hasroRotate 1800ms linear infinite;
+    animation: hasroRotate 1800ms linear infinite
+}
+
+@-webkit-keyframes hasroRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes hasroRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}

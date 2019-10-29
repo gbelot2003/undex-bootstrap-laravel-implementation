@@ -1,0 +1,47 @@
+/* :: Profile CSS */
+
+.user-friends img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.profile-big-thumb {
+    width: 210px;
+    height: 130px;
+}
+
+.profile-social {
+    a {
+        color: $text-color;
+        margin: 0 10px;
+        font-size: 18px;
+        @include transition-duration(400ms);
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.profile-brief {
+    .media {
+        @media #{$breakpoint-lg} {
+            display: block;
+        }
+
+        @media #{$breakpoint-md} {
+            display: block;
+        }
+        @media #{$breakpoint-xs} {
+            display: block;
+        }
+    }
+}
+
+.profile-desc- {
+    .media-body {
+        margin-top: 20px;
+    }
+}
