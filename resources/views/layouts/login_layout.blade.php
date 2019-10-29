@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Title -->
-    <title>Undex - Modern Admin Template</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="images/core-img/favicon.png">

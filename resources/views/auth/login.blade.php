@@ -18,38 +18,57 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
                                         <div class="xs-d-none">
-                                            <img src="images/bg-img/bannger-3.jpg" alt="">
+                                            <img src="images/bg-img/bannger-3.jpg" alt="bannger-3">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <!-- Logo -->
                                         <div class="card-body-login mb-30">
-                                            <img src="images/core-img/logo.png" alt="">
+                                            <img src="images/core-img/logo.png" alt="logo">
                                         </div>
 
                                         <h4 class="font-22 mb-30">Sign In</h4>
 
-                                        <form action="#">
+                                        <form method="POST" action="{{ route('login') }}">
+                                            @csrf
                                             <div class="form-group">
                                                 <label class="float-left" for="emailaddress">Email address</label>
-                                                <input class="form-control" type="email" id="emailaddress" required=""
-                                                       placeholder="Enter your email">
+                                                <input id="email" type="email"
+                                                       class="form-control @error('email') is-invalid @enderror"
+                                                       name="email" value="{{ old('email') }}" required
+                                                       autocomplete="email"
+                                                       autofocus
+                                                       placeholder="Enter your email"/>
+
+                                                @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
                                             </div>
 
                                             <div class="form-group">
                                                 <a href="forget-password.html" class="text-dark float-right"><span
                                                         class="font-12 text-primary">Forgot your password?</span></a>
                                                 <label class="float-left" for="password">Password</label>
-                                                <input class="form-control" type="password" required="" id="password"
-                                                       placeholder="Enter your password">
+                                                <input id="password" type="password"
+                                                       class="form-control @error('password') is-invalid @enderror"
+                                                       name="password"
+                                                       required
+                                                       autocomplete="current-password"/>
+                                                @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
                                             </div>
 
                                             <div class="form-group mb-3">
                                                 <div class="custom-control custom-checkbox pl-0">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input"
-                                                               id="customCheck1">
+                                                        <input type="checkbox" class="custom-control-input" name="remember"
+                                                               id="remember">
                                                         <label class="custom-control-label" for="customCheck1"><span
                                                                 class="font-16">Remember me</span></label>
                                                     </div>
