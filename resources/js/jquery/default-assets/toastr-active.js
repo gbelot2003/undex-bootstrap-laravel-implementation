@@ -1,0 +1,1 @@
+$(document).ready(function(){setTimeout(function(){toastr.options={closeButton:!0,progressBar:!0,showMethod:"slideDown",timeOut:4e3},toastr.success("Responsive Admin Theme","Welcome to Admintro")},1300)});

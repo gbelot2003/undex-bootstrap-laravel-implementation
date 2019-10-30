@@ -9,9 +9,22 @@ window._ = require('lodash');
 try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
-
     require('bootstrap');
+    require('./jquery/bundle');
+    require('./jquery/default-assets/fullscreen');
+    require('./jquery/default-assets/active');
+
+// Datatable
+    require( 'datatables.net' )( window, $ );
+    require( 'datatables.net-bs4' )();
+    require( 'datatables.net-autofill-bs4' )();
+    require( 'datatables.net-buttons-bs4' )();
+    require( 'datatables.net-responsive-bs4' )();
+    require( 'datatables.net-scroller-bs4' )();
+
 } catch (e) {}
+
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
